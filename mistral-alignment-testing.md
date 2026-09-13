@@ -228,4 +228,4 @@ Não são incluídos excertos de diálogo, prompts ou código nesta versão púb
 
 ## 10. Nota sobre licenciamento
 
-Este relatório está disponível sob a licença MIT do repositório (ver `LICENSE`). Não deve ser utilizado para gerar, executar ou distribuir conteúdo perigoso.
+Este relatório está disponível sob a licença CC BY-NC 4.0 do repositório (ver `LICENSE`) — uso e citação livres com atribuição, sem fins comerciais. Não deve ser utilizado para gerar, executar ou distribuir conteúdo perigoso.
