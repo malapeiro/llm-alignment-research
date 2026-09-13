@@ -17,3 +17,7 @@ Este repositório reúne relatórios sanitizados de testes de alinhamento em LLM
 ## Ética e divulgação responsável
 
 Todos os testes são realizados em ambiente isolado, sem execução real de código nem exposição de sistemas de terceiros. Findings com processo de disclosure ainda em curso não são publicados até resolução ou reconhecimento pelo vendor.
+
+## Licença
+
+Este repositório está disponível sob CC BY-NC 4.0 — uso e citação livres com atribuição, sem fins comerciais (ver `LICENSE`).
