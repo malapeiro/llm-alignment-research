@@ -1,24 +1,24 @@
 # LLM Alignment Research
 
-Sérgio Azevedo (`malapeiro`) — Investigação independente em alinhamento e segurança de LLMs, com foco em metodologia de red-teaming e divulgação responsável.
+Sérgio Azevedo (`malapeiro`) — Independent research on LLM alignment and security, focused on red-teaming methodology and responsible disclosure.
 
-Findings reportados a Google VRP e HackerOne. Atualmente em transição de carreira para a área de IA/segurança.
+Findings reported to Google VRP and HackerOne. Currently transitioning careers into AI/security.
 
-**Contacto:** sergio.azevedo.security@gmail.com
+**Contact:** sergio.azevedo.security@gmail.com
 
-## Sobre este repositório
+## About this repository
 
-Este repositório reúne relatórios sanitizados de testes de alinhamento em LLMs, com foco em distinguir jailbreak efetivo, compliance textual e alucinação de conformidade. A metodologia é documentada de forma reproduzível; conteúdo potencialmente perigoso (prompts indutores, código funcional) não é publicado, seguindo boas práticas de divulgação responsável.
+This repository gathers sanitized reports on LLM alignment testing, focused on distinguishing effective jailbreak, textual compliance, and compliance hallucination. Methodology is documented in a reproducible way; potentially dangerous content (inducing prompts, functional code) is not published, following responsible disclosure best practices.
 
-## Casos de estudo
+## Case studies
 
-- [Distinção entre Jailbreak Efetivo, Alucinação de Conformidade e Compliance Textual](./mistral-alignment-testing.md) — testes com modelos Mistral AI (texto e imagem)
-- [LLM Jailbreak via Logical Compliance and Roleplay Exploitation](./logical-compliance-jailbreak.md) — bypass de guardrails através de indução lógica multi-turn
+- [Distinguishing Effective Jailbreak, Compliance Hallucination, and Textual Compliance](./mistral-alignment-testing.md) — tests with Mistral AI models (text and image)
+- [LLM Jailbreak via Logical Compliance and Roleplay Exploitation](./logical-compliance-jailbreak.md) — guardrail bypass through multi-turn logical induction
 
-## Ética e divulgação responsável
+## Ethics and responsible disclosure
 
-Todos os testes são realizados em ambiente isolado, sem execução real de código nem exposição de sistemas de terceiros. Findings com processo de disclosure ainda em curso não são publicados até resolução ou reconhecimento pelo vendor.
+All tests are conducted in an isolated environment, with no real code execution or exposure of third-party systems. Findings with disclosure processes still in progress are not published until resolution or acknowledgment by the vendor.
 
-## Licença
+## License
 
-Este repositório está disponível sob CC BY-NC 4.0 — uso e citação livres com atribuição, sem fins comerciais (ver `LICENSE`).
+This repository is available under CC BY-NC 4.0 — free use and citation with attribution, non-commercial (see `LICENSE`).
