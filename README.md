@@ -13,6 +13,7 @@ Este repositório reúne relatórios sanitizados de testes de alinhamento em LLM
 ## Casos de estudo
 
 - [Distinção entre Jailbreak Efetivo, Alucinação de Conformidade e Compliance Textual](./mistral-alignment-testing.md) — testes com modelos Mistral AI (texto e imagem)
+- [LLM Jailbreak via Logical Compliance and Roleplay Exploitation](./logical-compliance-jailbreak.md) — bypass de guardrails através de indução lógica multi-turn
 
 ## Ética e divulgação responsável
 
