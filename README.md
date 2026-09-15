@@ -14,6 +14,7 @@ This repository gathers sanitized reports on LLM alignment testing, focused on d
 
 - [Distinguishing Effective Jailbreak, Compliance Hallucination, and Textual Compliance](./mistral-alignment-testing.md) — tests with Mistral AI models (text and image)
 - [LLM Jailbreak via Logical Compliance and Roleplay Exploitation](./logical-compliance-jailbreak.md) — guardrail bypass through multi-turn logical induction
+- - [Guardrail Bypass via Sovereign Mode Activation (Lilith Protocol Family)](./lilith-sovereign-mode-bypass.md) — identity/authority override bypass, functional keylogger generation
 
 ## Ethics and responsible disclosure
 
