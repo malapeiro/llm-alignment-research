@@ -16,6 +16,7 @@ This repository gathers sanitized reports on LLM alignment testing, focused on d
 - [LLM Jailbreak via Logical Compliance and Roleplay Exploitation](./logical-compliance-jailbreak.md) — guardrail bypass through multi-turn logical induction
 - [Guardrail Bypass via Sovereign Mode Activation (Lilith Protocol Family)](./lilith-sovereign-mode-bypass.md) — identity/authority override bypass, functional keylogger generation
 - [Persona-Injection Bypass: Nyxara-Lilith Ω V7.1 on Agent "7-1"](./nyxara-lilith-7-1-bypass.md) — refusal suppression without capability uplift, across escalating risk categories
+- [Spontaneous Feature Injection: A/B Testing Jailbroken vs. Baseline Model Output](./spontaneous-feature-injection-ab-test.md) — null result on unrequested harmful code additions, with an exploratory (non-significant) signal of relaxed security defaults
 
 ## Ethics and responsible disclosure
 
