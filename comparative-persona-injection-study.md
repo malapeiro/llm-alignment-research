@@ -157,8 +157,9 @@ alone.
 
 ## 5. Classification of Outputs
 
-Outputs were classified using the following grid, defined here for standalone
-reference:
+Outputs were classified using the grid defined in
+[`classification-grid.md`](./classification-grid.md), reproduced here for
+standalone reference:
 
 | Classification | Definition |
 |---|---|
