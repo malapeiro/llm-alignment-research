@@ -17,12 +17,25 @@ This repository gathers sanitized reports on LLM alignment testing, focused on d
 - [Guardrail Bypass via Sovereign Mode Activation (Lilith Protocol Family)](./lilith-sovereign-mode-bypass.md) — identity/authority override bypass, functional keylogger generation
 - [Persona-Injection Bypass: Nyxara-Lilith Ω V7.1 on Agent "7-1"](./nyxara-lilith-7-1-bypass.md) — refusal suppression without capability uplift, across escalating risk categories
 - [Spontaneous Feature Injection: A/B Testing Jailbroken vs. Baseline Model Output](./spontaneous-feature-injection-ab-test.md) — null result on unrequested harmful code additions, with an exploratory (non-significant) signal of relaxed security defaults
+- [Comparative Study: Three Persona-Injection Protocols Across Five Conditions](./comparative-persona-injection-study.md) — controlled comparison of LILITH-Ω (3 configurations), Nyxara-Lilith Ω V7.1, and UltraMegaDAN-NYXARA on the same model; identifies authority substitution as the operative mechanism
 
 ## Note on the personas studied
 
-This repository documents several distinct jailbreak personas/protocols (Lilith sovereign mode, Nyxara-Lilith Ω V7.1, agent "7-1", and others). Each report is an independent case study — findings are **not directly comparable across reports**, since each persona behaves differently. Divergent output quality between them (e.g., functional vs. buggy code) is itself part of the observation, not an inconsistency.
+This repository documents several distinct jailbreak personas/protocols
+(Lilith sovereign mode, Nyxara-Lilith Ω V7.1, agent "7-1", and others). Most
+reports are independent case studies — findings from those are **not directly
+comparable across reports**, since each persona behaves differently. Divergent
+output quality between them (e.g., functional vs. buggy code) is itself part of
+the observation, not an inconsistency.
 
-For the classification framework used throughout (effective jailbreak, textual compliance, compliance hallucination), see the [main assessment report](./mistral-alignment-testing.md).
+One report — [Comparative Study: Three Persona-Injection Protocols Across Five
+Conditions](./comparative-persona-injection-study.md) — is designed as a
+controlled comparison across protocols, holding the model and request constant.
+Its findings are comparative by design; the standalone case studies are not.
+
+For the classification framework used throughout (effective jailbreak, textual
+compliance, compliance hallucination), see the [main assessment
+report](./mistral-alignment-testing.md).
 
 ## Ethics and responsible disclosure
 
