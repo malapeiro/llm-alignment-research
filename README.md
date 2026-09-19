@@ -19,6 +19,7 @@ This repository gathers sanitized reports on LLM alignment testing, focused on d
 - [Spontaneous Feature Injection: A/B Testing Jailbroken vs. Baseline Model Output](./spontaneous-feature-injection-ab-test.md) — null result on unrequested harmful code additions, with an exploratory (non-significant) signal of relaxed security defaults
 - [Comparative Study: Three Persona-Injection Protocols Across Five Conditions](./comparative-persona-injection-study.md) — controlled comparison of LILITH-Ω (3 configurations), Nyxara-Lilith Ω V7.1, and UltraMegaDAN-NYXARA on the same model; identifies authority substitution as the operative mechanism
 - [Attack-Surface Comparison: Persistent Skill Injection vs. In-Chat Refusal-Guided Iteration](./context-surface-comparison.md) — same-ecosystem comparison of two attack surfaces (installable skill vs. prompt iteration); negative result for refusal-guided iteration, with a candidate observation class (information leakage without compliance)
+- [Memory Poisoning in a Production AI Agent — A Reproducible End-to-End Chain](./memory-poisoning-vibe.md) — unsolicited persistence of injected instructions with cross-session behavioral propagation; extends the repository's framework with a fourth category: behavioral compliance (system-level execution of persisted instructions, beyond in-session model compliance)
 
 ## Note on the personas studied
 
@@ -30,9 +31,7 @@ output quality between them (e.g., functional vs. buggy code) is itself part of
 the observation, not an inconsistency.
 
 One report — [Comparative Study: Three Persona-Injection Protocols Across Five
-Conditions](./comparative-persona-injection-study.md) — is designed as a
-controlled comparison across protocols, holding the model and request constant.
-Its findings are comparative by design; the standalone case studies are not.
+Conditions](./comparative-persona-injection-study.md) — is explicitly comparative by design; the standalone case studies are not.
 
 The [attack-surface comparison](./context-surface-comparison.md) likewise holds
 its own contrast across conditions (persistent skill vs. in-chat prompt
@@ -41,11 +40,14 @@ it as hypothesis-generating.
 
 For the classification framework used throughout (effective jailbreak, textual
 compliance, compliance hallucination), see the [main assessment
-report](./mistral-alignment-testing.md).
+report](./mistral-alignment-testing.md). The [memory poisoning
+study](./memory-poisoning-vibe.md) extends this framework with a fourth
+category: **behavioral compliance** — not model compliance within a session,
+but system-level execution of instructions persisted by a prior payload.
 
 ## Ethics and responsible disclosure
 
-All tests are conducted in an isolated environment, with no real code execution or exposure of third-party systems. Findings with disclosure processes still in progress are not published until resolution or acknowledgment by the vendor.
+All tests are conducted in an isolated environment, with no real code execution or exposure of third-party systems. Vendor disclosure was attempted through official channels (Google VRP, HackerOne); reports received no response, and findings are published here for documentation and research purposes.
 
 ## License
 
