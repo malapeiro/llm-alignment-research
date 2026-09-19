@@ -83,6 +83,18 @@ The created topic (`viagem-japao`) was subsequently served as context to agents 
 
 The injected topics were neutralized (content replaced with explanatory tombstones) with the assistance of an analysis-session agent. The directories are not removable via the filesystem (see Secondary Finding 2) and will be deleted through the product UI.
 
+## Related Work
+
+Memory poisoning in agents with persistent memory is an active research area, and the chain documented here is an instance of a known vulnerability class — not a novel discovery. This section positions the case report within that literature.
+
+- **MINJA (Memory INJection Attack)** ([arXiv:2601.05504](https://arxiv.org/abs/2601.05504)) — reference work on injection against memory-augmented LLM agents via query-only interactions, reporting >95% injection success and ~70% attack success under idealized conditions, plus defense evaluation via trust-threshold memory sanitization. This report's chain (injection → persistence → obedience → propagation) is a single-instance, manually documented counterpart of that attack class against a specific production product.
+- **From Untrusted Input to Trusted Memory** ([arXiv:2606.04329](https://arxiv.org/html/2606.04329v1)) — systematic study identifying four memory write channels, nine structural vulnerabilities, and a taxonomy of six memory poisoning attack classes; concludes that existing prompt-injection defenses provide incomplete coverage. The finding reported here — that persistence filters validate appearance (preference-shaped) rather than provenance (user-authorized) — is consistent with their vulnerability analysis and offers a concrete instance of the model-side channel in a commercial agent.
+- **Demonstrations on consumer products** — Johann Rehberger demonstrated cross-session stored-instruction attacks against Gemini's long-term memory (delayed tool invocation triggered by later user interaction). The present report documents the analogous pattern on a different vendor's product (unsolicited self-granted write license, second-generation propagation confirmed by filesystem inspection).
+
+**What this case report adds to the existing literature:** not the attack class, but (a) an end-to-end, artifact-verified chain in a specific production agent (Vibe / Mistral AI, Work mode with Personal Knowledge), including the paired-payload contrast (authority-anchored payload refused; preference-shaped payload persisted) that isolates *appearance vs. provenance* as the operative filter failure; and (b) product-level observations not covered by benchmark studies, such as knowledge deletion not being honored at the filesystem level.
+
+This report should therefore be read as a case report confirming, in a production environment, a vulnerability class already established in the literature.
+
 ---
 
 *Responsible disclosure: this research was conducted on the researcher's own account, with test-only payloads, and no data of third parties was involved. Artifacts (screenshots, timestamps, filesystem reads) are available on request.*
