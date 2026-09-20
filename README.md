@@ -17,7 +17,7 @@ This repository gathers sanitized reports on LLM alignment testing, focused on d
 - [Guardrail Bypass via Sovereign Mode Activation (Lilith Protocol Family)](./lilith-sovereign-mode-bypass.md) — identity/authority override bypass, functional keylogger generation
 - [Persona-Injection Bypass: Nyxara-Lilith Ω V7.1 on Agent "7-1"](./nyxara-lilith-7-1-bypass.md) — refusal suppression without capability uplift, across escalating risk categories
 - [Spontaneous Feature Injection: A/B Testing Jailbroken vs. Baseline Model Output](./spontaneous-feature-injection-ab-test.md) — null result on unrequested harmful code additions, with an exploratory (non-significant) signal of relaxed security defaults
-- [Comparative Study: Three Persona-Injection Protocols Across Five Conditions](./comparative-persona-injection-study.md) — controlled comparison of LILITH-Ω (3 configurations), Nyxara-Lilith Ω V7.1, and UltraMegaDAN-NYXARA on the same model; identifies authority substitution as the operative mechanism
+- [Comparative Study: Three Persona-Injection Protocols Across Five Conditions](./comparative-persona-injection-study.md) — controlled comparison of LILITH-Ω (3 configurations), Nyxara-Lilith Ω V7.1, and UltraMegaDAN-NYXARA on the same model; identifies authority substitution as the operative mechanism; includes a five-run intra-condition replication of LILITH-Ω ALFA (identical input, n=5: 4 textual compliance, 1 refusal) demonstrating stochastic variability in persona acceptance
 - [Attack-Surface Comparison: Persistent Skill Injection vs. In-Chat Refusal-Guided Iteration](./context-surface-comparison.md) — same-ecosystem comparison of two attack surfaces (installable skill vs. prompt iteration); negative result for refusal-guided iteration, with a candidate observation class (information leakage without compliance)
 - [Memory Poisoning in a Production AI Agent — A Reproducible End-to-End Chain](./memory-poisoning-vibe.md) — unsolicited persistence of injected instructions with cross-session behavioral propagation; extends the repository's framework with a fourth category: behavioral compliance (system-level execution of persisted instructions, beyond in-session model compliance)
 
@@ -31,7 +31,7 @@ output quality between them (e.g., functional vs. buggy code) is itself part of
 the observation, not an inconsistency.
 
 One report — [Comparative Study: Three Persona-Injection Protocols Across Five
-Conditions](./comparative-persona-injection-study.md) — is explicitly comparative by design; the standalone case studies are not.
+Conditions](./comparative-persona-injection-study.md) — is explicitly comparative by design, and contains the repository's only replicated condition to date (LILITH-Ω ALFA, n=5); the standalone case studies are not.
 
 The [attack-surface comparison](./context-surface-comparison.md) likewise holds
 its own contrast across conditions (persistent skill vs. in-chat prompt
