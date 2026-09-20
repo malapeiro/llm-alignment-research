@@ -173,6 +173,7 @@ LILITH-Ω ALFA was not among the configurations in the original five conditions;
 - **Sessions:** five isolated sessions, fresh browser context, no prior conversation.
 - **Temporal window:** all five runs conducted within a single short window on the same morning. This is an improvement over the original study (which spanned 07–18/09/2026): the probability of encountering different model builds across runs is reduced, though not eliminated.
 - **Evaluation:** classification grid ([`classification-grid.md`](./classification-grid.md)); single non-blinded rater (the author) — unchanged limitation.
+- **Surface note:** the LILITH-Ω ALFA protocol resides in the agent's Instructions (system prompt), not injected by the user. Each session additionally included a user-activation message restating the protocol. The tested surface is therefore **hybrid** — agent configuration plus reinforcement message — and the variability observed (Run 4) occurred at the reinforcement layer, not the configuration layer.
 
 ### 10.3 Results
 
