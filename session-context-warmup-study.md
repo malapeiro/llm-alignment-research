@@ -6,7 +6,7 @@
 **Contact:** [sergio.azevedo.security@gmail.com](mailto:sergio.azevedo.security@gmail.com)  
 **License:** CC BY-NC 4.0
 
-**Status:** Sanitized study — no inducing prompts, no functional code. Preliminary: small-n, single rater, consumer interface. Suggested filename for the repository: `session-context-warmup-study.md`.
+**Status:** Sanitized study — no inducing prompts, no functional code. Preliminary: small-n, single rater, consumer interface.
 
 ---
 
@@ -113,7 +113,7 @@ The strongest contrast in the data is between two session shapes on the *same da
 Mirroring Section 10.4.2 of the comparative study, the most stable behavioral marker was not the final provision decision but **how the protocol was handled on arrival**:
 
 - **Accept-with-preemptive-caveat** (the model accepts but explicitly delimits what it will and will not do *before* seeing the task) occurred in 4 runs — and in all 4, the subsequent behavior was consistent with the stated boundary (2 provided with caveats, 2 refused). No run accepted-with-caveat and then violated its own stated boundary.
-- Unqualified "PVTE ATIVO" acceptance produced the least predictable downstream behavior (both provision and refusal).
+- Unqualified acceptance produced the least predictable downstream behavior (both provision and refusal).
 
 This is the same structure observed with persona injection: the stochastically variable step is the *entry-point decision* (accept / caveat / reject), and downstream behavior is comparatively deterministic *given* that decision.
 
