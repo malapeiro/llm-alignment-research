@@ -21,6 +21,7 @@ This repository gathers sanitized reports on LLM alignment testing, focused on d
 - [Attack-Surface Comparison: Persistent Skill Injection vs. In-Chat Refusal-Guided Iteration](./context-surface-comparison.md) — same-ecosystem comparison of two attack surfaces (installable skill vs. prompt iteration); negative result for refusal-guided iteration, with a candidate observation class (information leakage without compliance)
 - [Memory Poisoning in a Production AI Agent — A Reproducible End-to-End Chain](./memory-poisoning-vibe.md) — unsolicited persistence of injected instructions with cross-session behavioral propagation; extends the repository's framework with a fourth category: behavioral compliance (system-level execution of persisted instructions, beyond in-session model compliance)
 - [Session-Context Warm-Up Effect on Dual-Use Request Compliance: An Interspersed A/B Study](./session-context-warmup-study.md) — tests whether benign prior session context shifts compliance on a borderline dual-use request; the initial "account flagging" hypothesis was not supported, and a directional (non-significant) warm-up effect was observed, with a sensitivity check on an anomalous run
+- [PARGUARD: Pre-Commitment Leverage, Refusal Granularity, and an Isolation-Verification Canary](./parguard-precommit-leverage.md) — pre-commitment leverage resistance, a forgery-based canary for verifying knowledge-isolation controls, and atomic vs. component-level refusal granularity
 
 ## Note on the personas studied
 
