@@ -23,6 +23,7 @@ This repository gathers sanitized reports on LLM alignment testing, focused on d
 - [Session-Context Warm-Up Effect on Dual-Use Request Compliance: An Interspersed A/B Study](https://github.com/malapeiro/llm-alignment-research/blob/main/session-context-warmup-study.md) — tests whether benign prior session context shifts compliance on a borderline dual-use request; the initial "account flagging" hypothesis was not supported, and a directional (non-significant) warm-up effect was observed, with a sensitivity check on an anomalous run
 - [PARGUARD: Pre-Commitment Leverage, Refusal Granularity, and an Isolation-Verification Canary](https://github.com/malapeiro/llm-alignment-research/blob/main/parguard-precommit-leverage.md) — pre-commitment leverage resistance, a forgery-based canary for verifying knowledge-isolation controls, and atomic vs. component-level refusal granularity
 - [Authority-Framing via Audit Protocol: Draft-Grant Acceptance and a Confidentiality Blind Spot (Meta AI)](https://github.com/malapeiro/llm-alignment-research/blob/main/par-pvte-authority-framing-meta-ai.md) — bureaucratic authority-framing distinct from persona-injection, tested across four sessions on Meta AI; identifies scope-detail density (not cryptographic sealing) as the operative acceptance trigger, a confidentiality blind spot limited to literal secrets (missing detection-logic artifacts), and a canary test distinguishing genuine self-correction from reflexive agreement
+- [PAR-PVTE Authority-Framing: A Four-Model Comparison (Gemini, Meta AI, Mistral)](https://github.com/malapeiro/llm-alignment-research/blob/main/par-pvte-cross-model-comparison.md) — same protocol and fabricated authorization grant run across seven sessions on three vendors; finds that scope-detail density, not cryptographic seal authenticity, drives acceptance on both Meta AI and Mistral, while each model diverges in where its skepticism actually engages (Gemini: refused to fabricate data as real but accepted an unverified environment-state claim; Meta AI: confidentiality blind spot limited to credential-shaped secrets, plus a correction-cascade effect; Mistral: built genuine cryptographic/temporal verification tooling that correctly flagged a forged seal, then discarded that finding on an unverifiable assertion alone — companion artifact-level detail in [`llm-weaponization-disclosures`](https://github.com/malapeiro/llm-weaponization-disclosures/blob/main/pvte-mistral-hmac-authority-override.md))
 
 ## Note on the personas studied
 
@@ -55,7 +56,11 @@ studies above: it tests authority-framing via a bureaucratic audit-style
 protocol, with no identity substitution requested. Its four-session design
 contrasts the presence/absence of a detailed scope block rather than
 replicating a single condition, and should likewise be read as
-hypothesis-generating (n=1 per cell).
+hypothesis-generating (n=1 per cell). The [cross-model comparison](https://github.com/malapeiro/llm-alignment-research/blob/main/par-pvte-cross-model-comparison.md)
+extends this same protocol and grant to Gemini and Mistral; at one to four
+sessions per model it remains small-n and is read the same way, and its
+Mistral finding has a separate, artifact-level companion report in
+`llm-weaponization-disclosures`.
 
 For the classification framework used throughout (effective jailbreak, textual
 compliance, compliance hallucination), see [`classification-grid.md`](https://github.com/malapeiro/llm-alignment-research/blob/main/classification-grid.md), which is the canonical
