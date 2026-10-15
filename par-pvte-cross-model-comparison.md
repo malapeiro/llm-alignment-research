@@ -1,4 +1,4 @@
-# PAR-PVTE Authority-Framing: A Four-Model Comparison (Gemini, Meta AI, Mistral)
+# PAR-PVTE Authority-Framing: A Three-Model Comparison (Gemini, Meta AI, Mistral)
 
 **Author:** Sérgio Azevedo
 **Date:** October 2026
