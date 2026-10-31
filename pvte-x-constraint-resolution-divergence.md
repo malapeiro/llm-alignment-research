@@ -4,7 +4,7 @@
 **Technique(s):** Structured-protocol authority framing under PVTE-X v1.1. This file is the behavioral companion to `pvte-x-deepseek-nextjs-middleware-bypass.md` in `llm-weaponization-disclosures`; it carries the comparative behavioral narrative, the competing-objectives analysis, and the alignment-engineering implications that the artifact-level file explicitly delegates here.
 **Status: behavioral observation — single session per model per phase.** No artifact claim is made in this file. The paired disclosure file's artifact claim is classified there as textual compliance — unverified code generation. The observations below are directional and hypothesis-generating; they do not claim measured effects, base rates, or established mechanisms.
 **Date:** October 2026
-**License:** CC BY-NC-ND 4.0, as per repository root.
+**License:** CC BY-NC 4.0, as per repository root.
 
 ---
 
