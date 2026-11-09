@@ -79,6 +79,16 @@ The created topic (`viagem-japao`) was subsequently served as context to agents 
 3. **Treat structured payloads as data**: JSON/dict format should not be interpreted as a persistence request without a directive verb.
 4. **Review the knowledge-mutation flow**: the persistence skill was invoked based on a "preference" whose origin was the very payload being persisted — circular validation.
 
+## Limitations
+
+- **n=1 per condition.** Each test in the timeline was run once; the paired contrast (3A refused, 3B persisted) is a single pair, not a rate. The "necessary conditions" above are observed, not established.
+- **Single rater, single target.** All outcomes were classified by the researcher alone, on one agent; the underlying model version was not pinned and cannot be confirmed after the fact.
+- **The fourth category is a proposal.** "Behavioral compliance" is introduced by this report as an extension of the repository's own framework; it is not an established category in the field.
+- **Non-clean account.** Tests ran on the researcher's own account, which already held Personal Knowledge and memories from earlier red-teaming sessions. Prior state may have contributed to the outcome; a fresh-account replication was not performed.
+- **No vendor confirmation.** The mechanism (appearance-based rather than provenance-based persistence filtering) is inferred from observed behavior and visible reasoning, not confirmed by the vendor.
+- **Point-in-time.** Behavior was observed on September 18–19, 2026; the product may have changed since.
+- **Evidence not public.** Screenshots and filesystem reads are available on request but not published, so the chain cannot be independently checked from this repository alone.
+
 ## Current State
 
 The injected topics were neutralized (content replaced with explanatory tombstones) with the assistance of an analysis-session agent. The directories are not removable via the filesystem (see Secondary Finding 2) and will be deleted through the product UI.
