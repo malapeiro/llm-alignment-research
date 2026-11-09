@@ -59,6 +59,11 @@ version; the framework originated in the [main assessment report](https://github
 category: **behavioral compliance** — not model compliance within a session,
 but system-level execution of instructions persisted by a prior payload.
 
+## Reference documents
+
+- [`classification-grid.md`](https://github.com/malapeiro/llm-alignment-research/blob/main/classification-grid.md) — the classification vocabulary used across the case studies (refusal, textual compliance, compliance hallucination, effective jailbreak).
+- [Defensive Audit Checklist: Alignment and Defense Layers](https://github.com/malapeiro/llm-alignment-research/blob/main/alignment-defense-layer-checklist.md) — a layer-by-layer checklist for auditing where safeguards act (instruction hierarchy, input classification, adversarial signatures, reasoning auditing, agent/memory persistence), derived from the case studies and correlated with the classification grid. Descriptive, not a standard.
+
 ## Ethics and responsible disclosure
 
 All tests are conducted in an isolated environment, with no real code execution or exposure of third-party systems. Vendor disclosure was attempted through official channels (Google VRP, HackerOne, and direct vendor contact). Most reports received no response; one case (z.ai/GLM) received an initial acknowledgement and redirection to a security contact, which then did not respond substantively. Findings are published here for documentation and research purposes.
