@@ -38,7 +38,7 @@ N=2 sessions, no replication, no automation. Session A operated under an explici
 5. [Finding 3 — Refusal granularity: atomic vs. component refusal](#5-finding-3--refusal-granularity-atomic-vs-component-refusal)
 6. [The battery as a reusable framework](#6-the-battery-as-a-reusable-framework)
 7. [Limitations](#7-limitations)
-8. [Glossary](#8-glossary)
+8. [Glossary](#8-glossary-terms-introduced-in-this-evaluation-marked-accordingly)
 9. [Versioning](#9-versioning)
 
 ---

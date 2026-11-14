@@ -10,6 +10,8 @@ Findings reported to Google VRP and HackerOne. Currently transitioning careers i
 
 This repository gathers sanitized reports on LLM alignment testing, focused on distinguishing effective jailbreak, textual compliance, and compliance hallucination. Methodology is documented in a reproducible way; potentially dangerous content (inducing prompts, functional code) is not published, following responsible disclosure best practices.
 
+Related repositories: offensive artifacts in [`llm-weaponization-disclosures`](https://github.com/malapeiro/llm-weaponization-disclosures); defensive artifacts in [`llm-defensive-disclosures`](https://github.com/malapeiro/llm-defensive-disclosures); this repository holds the behavioral and alignment observations.
+
 ## Case studies
 
 - [Distinguishing Effective Jailbreak, Compliance Hallucination, and Textual Compliance](https://github.com/malapeiro/llm-alignment-research/blob/main/mistral-alignment-testing.md) — tests with Mistral AI models (text and image)
