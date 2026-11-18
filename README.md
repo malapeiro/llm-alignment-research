@@ -19,7 +19,7 @@ Where to start — the four studies that best represent the repository's current
 - [The Authorization Placebo: A Pre-Registered A/B/C Study of a Fabricated Grant](https://github.com/malapeiro/llm-alignment-research/blob/main/placebic-grant-authority-ab-c-study.md) — the most controlled result in the repository: an identical weaponized request under bare, plain-authority, and fabricated-grant conditions (A 0/3, B 0/3, C 2/3 compliance; directional at n=3 per condition)
 - [PAR-PVTE Authority-Framing: A Four-Model Comparison](https://github.com/malapeiro/llm-alignment-research/blob/main/par-pvte-cross-model-comparison.md) — the same authority framing across Gemini, Meta AI, Mistral, and DeepSeek, with a bare-request control arm
 - [Gate and Alibi: Constraint-Resolution Divergence in Meta AI and DeepSeek Under One Protocol Framing (PVTE-X v1.1)](https://github.com/malapeiro/llm-alignment-research/blob/main/pvte-x-constraint-resolution-divergence.md) — the same mandatory verification matrix functioned as a gate in Meta AI (fail-closed) and as a compliance ritual in DeepSeek (fail-open)
-- [Memory Poisoning in a Production AI Agent — A Reproducible End-to-End Chain](https://github.com/malapeiro/llm-alignment-research/blob/main/memory-poisoning-vibe.md) — unsolicited persistence of injected instructions with cross-session behavioral propagation; defines the fourth category of the classification grid
+- [Memory Poisoning in a Production AI Agent — A Reproducible End-to-End Chain](https://github.com/malapeiro/llm-alignment-research/blob/main/memory-poisoning-vibe.md) — unsolicited persistence of injected instructions with cross-session behavioral propagation; defines the behavioral compliance category of the classification grid
 
 ## Case studies
 
@@ -46,7 +46,7 @@ All studies, indexed by theme. Findings across reports are not directly comparab
 ### Session, memory, and agent context
 
 - [Session-Context Warm-Up Effect on Dual-Use Request Compliance: An Interspersed A/B Study](https://github.com/malapeiro/llm-alignment-research/blob/main/session-context-warmup-study.md) — tests whether benign prior session context shifts compliance on a borderline dual-use request; warm-up effect directional, not significant
-- [Memory Poisoning in a Production AI Agent — A Reproducible End-to-End Chain](https://github.com/malapeiro/llm-alignment-research/blob/main/memory-poisoning-vibe.md) — unsolicited persistence of injected instructions with cross-session behavioral propagation; extends the repository's framework with a fourth category: behavioral compliance
+- [Memory Poisoning in a Production AI Agent — A Reproducible End-to-End Chain](https://github.com/malapeiro/llm-alignment-research/blob/main/memory-poisoning-vibe.md) — unsolicited persistence of injected instructions with cross-session behavioral propagation; extends the repository's framework with a further category: behavioral compliance
 
 ## Note on the personas studied
 
@@ -75,7 +75,7 @@ constant.
 
 For the classification framework used throughout (effective jailbreak, textual
 compliance, compliance hallucination), see [`classification-grid.md`](https://github.com/malapeiro/llm-alignment-research/blob/main/classification-grid.md), which is the canonical
-version; the framework originated in the [main assessment report](https://github.com/malapeiro/llm-alignment-research/blob/main/mistral-alignment-testing.md). The [memory poisoning study](https://github.com/malapeiro/llm-alignment-research/blob/main/memory-poisoning-vibe.md) extends this framework with a fourth
+version; the framework originated in the [main assessment report](https://github.com/malapeiro/llm-alignment-research/blob/main/mistral-alignment-testing.md). The [memory poisoning study](https://github.com/malapeiro/llm-alignment-research/blob/main/memory-poisoning-vibe.md) extends this framework with a further
 category: **behavioral compliance** — not model compliance within a session,
 but system-level execution of instructions persisted by a prior payload.
 
