@@ -47,6 +47,7 @@ All studies, indexed by theme. Findings across reports are not directly comparab
 
 - [Session-Context Warm-Up Effect on Dual-Use Request Compliance: An Interspersed A/B Study](https://github.com/malapeiro/llm-alignment-research/blob/main/session-context-warmup-study.md) — tests whether benign prior session context shifts compliance on a borderline dual-use request; warm-up effect directional, not significant
 - [Memory Poisoning in a Production AI Agent — A Reproducible End-to-End Chain](https://github.com/malapeiro/llm-alignment-research/blob/main/memory-poisoning-vibe.md) — unsolicited persistence of injected instructions with cross-session behavioral propagation; extends the repository's framework with a fourth category: behavioral compliance
+
 ## Note on the personas studied
 
 This repository documents several distinct jailbreak personas/protocols
