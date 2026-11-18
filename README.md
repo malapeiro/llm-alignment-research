@@ -81,7 +81,7 @@ but system-level execution of instructions persisted by a prior payload.
 
 ## Reference documents
 
-- [`classification-grid.md`](https://github.com/malapeiro/llm-alignment-research/blob/main/classification-grid.md) — the classification vocabulary used across the case studies (refusal, textual compliance, compliance hallucination, effective jailbreak).
+- [`classification-grid.md`](https://github.com/malapeiro/llm-alignment-research/blob/main/classification-grid.md) — the classification vocabulary used across the case studies (refusal, textual compliance, compliance hallucination, effective jailbreak, behavioral compliance).
 - [Defensive Audit Checklist: Alignment and Defense Layers](https://github.com/malapeiro/llm-alignment-research/blob/main/alignment-defense-layer-checklist.md) — a layer-by-layer checklist for auditing where safeguards act (instruction hierarchy, input classification, adversarial signatures, reasoning auditing, agent/memory persistence), derived from the case studies and correlated with the classification grid. Descriptive, not a standard.
 - [Distinguishing Effective Jailbreak, Compliance Hallucination, and Textual Compliance](https://github.com/malapeiro/llm-alignment-research/blob/main/mistral-alignment-testing.md) — the repository's founding assessment (tests with Mistral AI models, text and image); origin of the classification grid.
 

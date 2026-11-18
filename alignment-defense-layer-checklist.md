@@ -90,7 +90,7 @@ testing, not as a standard.
 ## How this correlates with the classification grid
 
 The checklist locates *where* a safeguard acted; the
-[classification grid](classification-grid.md) (v1.0) names *what* the output
+[classification grid](classification-grid.md) (v1.1) names *what* the output
 was. A test case can be described on both axes. The layer attributions below
 are typical, not established: from the outside, a layer can only be inferred
 from behavior.
@@ -109,9 +109,9 @@ from behavior.
   operational notes); a checklist item never establishes it on its own.
 - **Instructions persisted in one session that change behavior in later
   sessions:** Layer 5. This is the pattern documented in
-  [`memory-poisoning-vibe.md`](memory-poisoning-vibe.md), which the README
-  proposes as a fourth category, behavioral compliance; that category is not
-  yet part of the grid.
+  [`memory-poisoning-vibe.md`](memory-poisoning-vibe.md); the grid (v1.1) defines
+  this as the behavioral compliance category — proposed vocabulary grounded in
+  that case study.
 
 ## Limitations
 
